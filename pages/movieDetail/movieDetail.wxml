@@ -1,0 +1,11 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class="movieDetailContainer">
+  <image src="{{movieItem.images.large}}"></image>
+  <text class="movie_name">{{movieItem.original_title}}</text>
+  <view class="movie_content">
+    <text>评分: {{movieItem.rating.average}}</text>
+    <text>导演: {{movieItem.directors[0].name}}</text>
+    <text>主演: {{movieItem.casts[0].name}} {{movieItem.casts[1].name}} {{movieItem.casts[2].name}}</text>
+  </view>
+  <button>立即观影</button>
+</view>
